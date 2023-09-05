@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section-form-register">
+        <div class="card-header"><h1>Create account</h1></div>
+        <div class="card-body">
+            <form id="form">
+                <div class="form-group">
+                    <label for="">Username</label>
+                    <input placeholder="Enter username" type="text" class="form-control" id="username">
+                    <div></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input placeholder="Enter email" type="email" class="form-control" id="email">
+                    <div></div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input placeholder="Enet nuber" type="nuber" class="form-control" id="phone">
+                    <div></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input placeholder="Enet password" type="password" class="form-control" id="password">
+                    <div></div>
+                </div>
+                <div class="form-group">
+                    <label for="repassword">Password</label>
+                    <input placeholder="Enet repassword" type="password" class="form-control" id="repassword">
+                    <div></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Confirm/Register</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <div id="img-check" class="register-checked">
+        <h1>you passed the registration with luck</h1>
+        <img  src="R.jpg" alt="">
+    </div>
+
+
+    <div id="login-check" class="login-checked">
+        <h1>passed the Login with correct</h1>
+        <img  src="R.jpg" alt="">
+    </div>
+
+
+    <div id="login-passed" class="login-passed">
+        <h1>you password and email <p>WRONG!</p></h1>
+        <img  src="wrong.jpg" alt="">
+    </div>
+    
+
+
+    <section class="section-form-login">
+        <div class="card-header"><h1>Sign in</h1></div>
+        <div class="card-body">
+            <form id="form-Sing-ing">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input placeholder="Enter email" type="email" class="form-control" id="email-sign">
+                    <div></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input placeholder="Enet password" type="password" class="form-control" id="password-sign">
+                    <div></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign</button>
+            </form>
+        </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>

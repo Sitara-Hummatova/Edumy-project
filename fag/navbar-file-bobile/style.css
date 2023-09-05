@@ -1,0 +1,375 @@
+/* @import url(reset.css); */
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.fa-angle-left {
+    float: right;
+}
+
+.header-mobile-navbar {
+    background-color: rgb(0, 0, 0);
+    width: 440px;
+    height: 600px;
+    margin-left: -440px;
+    transition: margin-left 1s ease;
+}
+
+.header-mobile-top {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+}
+
+.header-mobile-top h1 {
+    color: #fff;
+}
+
+.header-mobile-links>ul>li {
+    padding: 12px 20px 12px 20px;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid #333;
+    height: 45px !important;
+    font-size: 18px;
+}
+
+
+.header-mobile-links li:hover{
+    background-color: #333;
+}
+
+.header-mobile-links a:hover{
+    color: #fff;
+}
+
+/* // home menu start */
+
+.header-mobile-links-home-bottom1 {
+    /* width: 0px; */
+    width: 440px;
+    height: 600px;
+    transform: translateX(-500px);
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    transition: 0.3s;
+    right: 20px;
+    bottom: 76px;
+}
+
+.header-mobile-links-home-bottom1 li {
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+    height: 49px;
+}
+
+.header-mobile-links-home-bottom2 {
+    /* width: 0px; */
+    width: 440px;
+    transform: translateX(-500px);
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    transition: 0.3s;
+    bottom: 474px;
+    right: 20px
+}
+
+.header-mobile-links-home-bottom2 li {
+    padding: 15px 20px 12px 20px;
+    ;
+    font-size: 18;
+    border-bottom: 1px solid #333;
+
+}
+
+/*  home menu end */
+
+/* ------------------------ */
+
+/* course menu start */
+.courses-bottom1 {
+    /* width: 0px; */
+    width: 440px;
+    height: 600px;
+    transform: translateX(-500px);
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    transition: 0.3s;
+    right: 20px;
+    bottom: 120px;
+}
+
+.courses-bottom1 li {
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    height: 54px;
+    border-bottom: 1px solid #333;
+
+}
+
+/* courses men end */
+
+/* ------------------------------ */
+
+/* courses-list menu start */
+
+.Courses-List-bottom2 {
+    /* width: 0px; */
+    width: 440px;
+    transform: translateX(-500px);
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    transition: 0.3s;
+    bottom: 87px;
+    right: 20px
+}
+
+.Courses-List-bottom2 li {
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+
+}
+
+
+/* courses-list menu end */
+
+/* ------------------------- */
+
+/* courses single menu start */
+
+.Coruses-Single-bottom3 {
+    /* width: 0px; */
+    width: 440px;
+    height: 600px;
+    transform: translateX(-500px);
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    transition: 0.3s;
+    right: 20px;
+    bottom: 140px;
+}
+
+.Coruses-Single-bottom3 li {
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+}
+
+/* courses single menu end */
+
+/* --------------------- */
+
+/* Event menu start */
+
+.Events-bottom1 {
+    /* width: 0px; */
+    width: 440px;
+    height: 600px;
+    transform: translateX(-500px);
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    transition: 0.3s;
+    right: 20px;
+    bottom: 166px;
+}
+
+.Events-bottom1 li {
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+}
+
+/* Event menu end */
+
+/* -------------- */
+
+/* pages menu start */
+.Pages-bottom1 {
+    /* width: 0px; */
+    width: 440px;
+    height: 600px;
+    transform: translateX(-500px);
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    transition: 0.3s;
+    right: 20px;
+    bottom: 211px;
+}
+
+.Pages-bottom1 li {
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+    height: 54px;
+}
+
+/* pages menu end */
+
+/* ---------------------------- */
+
+/* pages-shop menu start */
+
+.Shop-pages-bottom2 {
+    /* width: 0px; */
+    width: 440px;
+    height: 600px;
+    transform: translateX(-500px);
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    transition: 0.3s;
+    right: 20px;
+    bottom: 87px;
+}
+
+.Shop-pages-bottom2 li {
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+}
+
+/* pages-shope menu end */
+
+/* ------------------------ */
+
+/* user-admin menu start */
+
+.User-Admin-bottom3 {
+    /* width: 0px; */
+    width: 440px;
+    height: 600px;
+    transform: translateX(-500px);
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    transition: 0.3s;
+    right: 20px;
+    bottom: 141px;
+}
+
+.User-Admin-bottom3 li {
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+}
+
+/* user-admin menu ende */
+
+/* ---------------- */
+
+/* blog menu start */
+/* blog bottom1 start*/
+.Blog-bottom1 {
+    /* width: 0px; */
+    width: 440px;
+    height: 600px;
+    transform: translateX(-500px);
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    transition: 0.3s;
+    right: 20px;
+    bottom: 256px;
+}
+
+.Blog-bottom1 li {
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+}
+
+/* blog bottom1 end*/
+/* blog menu ende */
+@media(max-width:768px) {
+    .header-mobile-navbar {
+        width: 250px;
+        margin-left: -250px;
+    }
+
+    .header-mobile-links-home-bottom1 {
+        width: 250px;
+        transform: translateX(-250px);
+    }
+
+    .header-mobile-links-home-bottom2 {
+        width: 250px;
+        transform: translateX(-250px);    
+    }
+
+    .courses-bottom1 {
+        width: 250px;
+        transform: translateX(-250px);
+    }
+    .Courses-List-bottom2 {
+        width: 250px;
+        transform: translateX(-250px);       
+    }
+    .Coruses-Single-bottom3 {
+        width: 250px;
+        transform: translateX(-250px); 
+    }
+    .Events-bottom1 {
+        width: 250px;
+        transform: translateX(-250px); 
+    }
+    .Pages-bottom1 {
+        width: 250px;
+        transform: translateX(-250px);
+    }
+    .Shop-pages-bottom2 {
+        width: 250px;
+        transform: translateX(-250px);
+    }
+    .User-Admin-bottom3 {
+        width: 250px;
+        transform: translateX(-250px);
+    }   
+    .Blog-bottom1 {
+        width: 250px;
+        transform: translateX(-250px);
+    }
+}
+
+
+
+.display-on {
+    /* width: 400px; */
+    overflow-x: visible;
+    transform: translateX(0px);
+    /* background-color: rgb(0, 0, 0); */
+}
+
+.display-on-menu-bars {
+    margin-left: 0px;
+}
+
+.display-off {
+    width: 0;
+    overflow-x: visible;
+}

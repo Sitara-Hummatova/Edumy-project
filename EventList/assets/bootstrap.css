@@ -1,0 +1,1041 @@
+/*
+1shekillere objectfit cover verilib
+2kartlar ayrica sectionlara bolunub shadow verilib
+3rengler rootda teyin edilmeyib
+4bodye reng verilmeyib
+reset css yoxdur
+
+responsivi deqiq yoxla
+px ler rem e chevrilmeyib
+ */
+
+/*============================= CARD SECTION START ============================= */
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url(../navbar-file-bobile/style.css);
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* ofline start */
+.ofline-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.ofline-div h1 {
+    font-size: 32px;
+    color: red;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.ofline-div img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ofline end */
+.header-mobile-navbar {
+    position: relative;
+    z-index: 999;
+}
+
+.serach-navbar {
+    background-color: rgba(0, 0, 0, .94);
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-100vh);
+    overflow-y: hidden;
+    position: absolute;
+}
+
+.serach-navbar-diaplay {
+    transform: translateY(0vh);
+    position: fixed;
+    z-index: 1000;
+    transition: transform 1s ease;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.search input {
+    width: 850px;
+    height: 67px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.seacr-navbar-x {
+    padding-top: 100px;
+    position: absolute;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.fa-xmark {
+    color: #fff;
+    font-size: 32px;
+    padding-bottom: 100px;
+    cursor: pointer;
+}
+
+.seacr-input {
+    font-size: 32px;
+    color: #fff;
+    padding-left: 50px;
+}
+
+/* seacr end */
+
+/* -------------------------- */
+
+/* section header baslanqic */
+.scroll-white {
+    border-bottom: 1px solid white;
+    height: 90px;
+}
+
+.section-header {
+    background-image: url(../images/profilss/inner-pagebg.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.section-header-color {
+    height: 100%;
+    background-image: -webkit-linear-gradient(235deg, rgb(255, 16, 83, 0.7) 0%, rgb(52, 82, 255, 0.7) 100%);
+    width: 100%;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo span {
+    padding-left: 15px;
+    font-size: 24px;
+    color: white;
+}
+
+.navbar-links {
+    align-self: center;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+.navbar-links ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.navbar-login {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbar-login-991px {
+    justify-content: space-between;
+    justify-content: end;
+    align-items: center;
+    display: none;
+}
+
+.navbar-login-991px i {
+    color: white;
+    cursor: pointer;
+    padding-right: 20px;
+    font-size: 26px;
+}
+
+.login-div i {
+    padding-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.login-div a {
+    color: white;
+    padding-right: 10px;
+    font-weight: 700;
+}
+
+.navbar-links ul li a {
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+.display-flex-li {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    width: 260px !important;
+    padding: 15px 15px;
+    margin: 10px -12px;
+    border-radius: 5px;
+}
+
+.display-flex-li li {
+    padding: 15px;
+    transition: transform 0.4s ease;
+}
+
+.display-flex-li li:hover {
+    transform: translateX(5px) !important;
+}
+
+.display-flex-li li a {
+    color: #000000 !important;
+    transition: transform 0.4s ease;
+}
+
+.display-flex-li li:hover>a {
+    color: #fd7e14 !important;
+}
+
+.home-bootom {
+    display: flex;
+    flex-direction: column;
+    position: relative !important;
+    left: 210px;
+    bottom: 131px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+.course-list-bootom1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 5px;
+    position: relative !important;
+    bottom: 41px;
+    left: 210px;
+}
+
+.position-list-bootom2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 5px;
+    position: relative !important;
+    bottom: 39px;
+    left: 210px;
+}
+
+.pages-list-bootom2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 5px;
+    position: relative !important;
+    bottom: 41px;
+    left: 210px;
+}
+
+.pages-list-bootom3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 5px;
+    position: relative !important;
+    bottom: 39px;
+    left: 210px;
+
+}
+
+.navbar-links-hover:hover .display-flex-li {
+    visibility: visible;
+    transition: opacity 1s ease;
+    opacity: 1;
+}
+
+.navbar-links-hover {
+    padding: 15px 0;
+}
+
+.navbar-links-hover ul li {
+    border-bottom: 1px solid #aaaaaaa1;
+}
+
+.navbar-links-hover-bottom {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.position-li:hover .navbar-links-hover-bottom {
+    visibility: visible;
+    transition: opacity 1s ease;
+    opacity: 1;
+}
+
+.position-li {
+    height: 45px;
+}
+
+.fixed {
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    transition: 1s ease all;
+}
+
+.navbar-links-color ul li a {
+    color: #333;
+}
+
+.navbar-logo img:nth-child(2) {
+    display: none;
+}
+
+.Contact-abouts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.Contact-abouts h1 {
+    color: #ffffff;
+    font-size: 35px;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 15px;
+}
+
+.Contact-abouts a {
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* section header media 991px  baslanqic*/
+
+@media(max-width:991px) {
+    .scroll-white {
+        position: sticky !important;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-login {
+        display: none;
+    }
+
+    .navbar-login-991px {
+        display: flex;
+    }
+}
+
+
+/* section header media 991px bitis */
+
+
+
+.container {
+    /* margin-top: 30px; */
+
+}
+
+#EventList {
+    margin-bottom: 70px !important;
+}
+
+.one {
+    /* margin-top: 50px; */
+    transition: 1.5s ease;
+}
+
+.one:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+}
+
+
+.two {
+    transition: 1.5s ease;
+}
+
+.two:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+}
+
+
+.three {
+    transition: 1.5s ease;
+}
+
+.three:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+}
+
+
+.four {
+    transition: 1.5s ease;
+}
+
+.four:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+}
+
+
+.card {
+    margin-top: 20px;
+    border: none;
+}
+
+.photo img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*  
+.word {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    left: 400px ;
+    z-index: 5;
+    bottom: 100px;
+} */
+
+.word h2 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 50px;
+    font-family: "Nunito";
+    text-align: center;
+    font-weight: 700;
+}
+
+.word span {
+    font-size: 18px;
+    font-family: "Nunito";
+    font-weight: 700;
+}
+
+.words {
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+
+.card-body {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+
+
+.card-title {
+    font-family: "Nunito";
+    color: #0a0a0a;
+    font-size: 22px;
+    font-weight: bold;
+    /* line-height: 2; */
+
+}
+
+.card-text {
+    color: #7e7e7e;
+    font-family: "Open Sans";
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+
+.card-body a {
+    color: rgb(126, 126, 126);
+    ;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Open Sans";
+    line-height: 3;
+    display: flex;
+    flex-direction: column;
+    display: block;
+
+}
+
+.card-body i {
+    font-size: 15px;
+}
+
+/*============================= CARD SECTION END ============================= */
+
+
+/*============================= PAGINATION SECTION START ============================= */
+
+
+/* font-family: "Open Sans"; */
+.arrow {
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 30px;
+    font-family: "Open Sans";
+}
+
+.pagination a {
+    text-decoration: none;
+}
+
+.reqem {
+    color: #7F7F7F;
+    font-size: 20px;
+    margin: 0px 0px 0px -1px;
+    padding: 12px 12px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    border-radius: 6px;
+    /* background-color: red; */
+
+    margin: 20px 0px;
+}
+
+@media (max-width:768px) {
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    .arrow {
+        margin: 20px 0;
+    }
+}
+
+.iki {
+    /* display: inline-block; */
+    /* margin: 10px 10px; */
+    background-color: #2441e7;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+
+
+}
+
+
+.btn1,
+.btn2 {
+    /* display: inline-flex; */
+    align-items: center;
+    font-size: 15px;
+    background-color: #fff;
+    color: #6F7074;
+    border: 2px solid #eee;
+    /* border-radius: 30px; */
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    height: 45px;
+    width: 110px;
+    line-height: 25px;
+    text-align: center;
+
+}
+
+.btn1,
+.btn2 i {
+
+    color: #fb3274;
+    /* padding-right: 15px; */
+}
+
+
+.btn2 {
+    transition: 1.5s ease;
+}
+
+.btn2:hover {
+    color: #6F7074;
+
+    background-color: #cbc0c0;
+}
+
+
+
+
+
+/* 
+    border: 2px solid #eeeeee;
+    border-radius: 22.5px;
+    color: #4f4f4f;
+    height: 45px;
+    line-height: 25px;
+    width: 104px; */
+
+
+
+/* .page-link {
+    border-radius: 50%;
+    
+} */
+
+/* .page {
+    padding-left: 40px;
+} */
+/* 
+.pagination {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+} */
+/* 
+.number {
+    
+    height: 70px;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;;
+    margin: 0 0 10px;
+
+} */
+
+/* .page-number {
+    display: inline-block;
+    margin-top: 12px;
+} */
+/* 
+.page-numberrr {
+    border: 2px solid #eeeeee;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: #4f4f4f;
+    height: 45px;
+    width: 110px;
+    line-height: 25px;
+    background: transparent;
+    text-align: center;
+    
+} */
+
+/* .page-number a {
+    text-decoration: none;
+} */
+
+/* 
+.ikinci {
+    background-color: #2441e7;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    height: 45px;
+    line-height: 30px;
+    overflow: hidden;
+    width: 45px;
+
+} */
+/* 
+.pagenomresi:hover {
+background-color: #aaa;
+text-decoration: none;
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ============================= PAGINATION SECTION END ============================= */
+
+
+
+/* 
+@media(max-width:768px) {
+    .right-side {
+        min-width: 900px;
+      
+    }
+
+
+
+/* @media(max-width:775px) { */
+/* .right-side {
+        min-width: 900px;
+      
+    } */
+
+/* .left-side img {
+        width: 370px;
+    }
+
+    .card-title {
+        padding-left: 20px;
+    }
+
+
+
+} */
+
+
+
+
+
+
+
+
+
+
+/*  ============================= FOOTER START =============================  */
+
+
+.appstore,
+.playstore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px 30px;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    border: none;
+}
+
+.appstore h6,
+.playstore h6 {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 5px;
+    font-family: "Nunito";
+}
+
+.appstore h4,
+.playstore h4 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    font-family: "Nunito";
+}
+
+
+
+.home-footer {
+    background-color: #151515;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0 50px 0;
+}
+
+.links-top h1 {
+    font-size: 22px;
+    color: #fff;
+    font-family: "Nunito";
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+.footer-contact {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
+}
+
+.footer-company {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
+}
+
+.footer-programs {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
+}
+
+.footer-support {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
+}
+
+.footer-mobile {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
+}
+
+.links-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.links-bottom span {
+    padding: 8px 0;
+    display: inline-block;
+    font-size: 13px;
+    font-family: "Nunito";
+    color: #9e9e9e;
+}
+
+.links-bottom a {
+    padding: 8px 0;
+    font-size: 13px;
+    font-family: "Nunito";
+    color: #9e9e9e;
+    transition: 0.5s ease;
+}
+
+.links-bottom a:hover {
+    color: #ffffff;
+    transform: translateX(15px);
+}
+
+.links-bottom-btn {
+    width: 240px;
+}
+
+.links-bottom-btn button {
+    font-size: 14px;
+    height: 65px;
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    transition: 0.3s ease;
+    margin-bottom: 15px;
+    padding: 0 0;
+    width: 100%;
+}
+
+.links-bottom-btn button i {
+    padding-right: 10px;
+}
+
+.links-bottom-btn button:hover {
+    background-color: transparent;
+    background-color: #291be9;
+}
+
+/* footer socila start */
+.footer-social {
+    border-top: 1px solid #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-left {
+    display: flex;
+    align-items: center;
+    width: 580px;
+    justify-content: space-between;
+}
+
+.footer-social-left span {
+    padding-right: 10px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.footer-social-left a {
+    font-size: 13px;
+    color: #9e9e9e;
+    transition: 0.5s ease;
+}
+
+.footer-social-left a:hover {
+    color: #fff;
+}
+
+.footer-social-right {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+    padding-right: 75px;
+}
+
+.footer-social-right a {
+    color: #333;
+    transition: 0.5s ease;
+}
+
+.footer-social-right a:hover {
+    color: #fff;
+}
+
+@media(max-width:1100px) {
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-social-right {
+        padding-top: 30px;
+        padding-right: 0;
+    }
+}
+
+@media(max-width:768px) {
+    .footer-social-left {
+        width: 300px;
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .footer-social-left img {
+        width: 40px;
+        height: 46px;
+    }
+
+    .footer-social-left span {
+        padding-right: 0;
+        font-size: 18px;
+    }
+
+    .footer-social-right {
+        width: 200px;
+    }
+
+    .footer-social-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media(max-width:576px) {
+    .footer-social-left span {
+        display: none;
+    }
+}
+
+/* footer socila end */
+.footer-end {
+    background-color: #0a0a0a;
+    color: #333;
+    font-size: 18px;
+    font-family: "Nunito";
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.playstore i,
+.appstore i {
+    width: 30px;
+    font-size: 32px;
+}
+
+/* fotter end */
+
+/*  ============================= FOOTER END =============================  */
